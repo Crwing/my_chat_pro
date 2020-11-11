@@ -11,7 +11,7 @@ def receive_message(client_socket):
 
 
 client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-client_socket.connect(('127.0.0.1', 9001))
+client_socket.connect(('45.32.130.93', 9001))
 userName = input('Please input your user name:')
 targetUserName = input("Please input your friend's name:")
 messDict = {'userName': userName, 'targetUserName': targetUserName, 'content': ''}
