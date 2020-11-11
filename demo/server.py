@@ -91,7 +91,7 @@ def receive_message(sock, addr, contactsDict, user_address_dict):
 
 
 server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-server_socket.bind(('127.0.0.1', 9001))
+server_socket.bind(('0.0.0.0', 9001))
 server_socket.listen(5)
 threads = []
 user_address_dict = {}
